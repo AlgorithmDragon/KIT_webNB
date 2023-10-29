@@ -1,0 +1,192 @@
+@charset 'utf-8';
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+:root {
+	/** color **/
+	--baseColor : #333;
+	--blueColor : #22aee5;
+	/** size **/
+	--baseContainer : 79.375rem; /*1270px*/
+	/** padding **/
+	
+}
+html {   font-size: 16px;}
+body {font-size: 1rem; font-family: 'NanumSquare', sans-serif; color: var(--baseColor);
+margin: 0; padding: 0;}
+a:link, a:visited, a:hover, a:active {color: var(--baseColor);}
+.container {width: var(--baseContainer);margin: 0 auto; height:120px;}
+header {position: absolute;width: 100%;top: 0;left: 0;background: rgb(255 255 255 / 86%); height: 200px;}
+.container h2 {width:13.875rem;padding:0.75rem 0;}
+header img {width: 11.875rem;padding: 0.75rem 0;}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+header nav ul li {
+    padding: 0 5px;
+    width: 100px;
+}
+header nav ul li a {
+    position: relative;
+    display: inline-block;
+    line-height: 5rem;
+    font-weight: bold;
+    font-size: 1.0625rem;
+    text-decoration: none;
+}
+header nav ul li.active a,header nav ul li:hover a { color: #333;}
+header nav ul li a:after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--baseColor);
+    left: 0;
+    bottom: 0;
+    top:53px;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li.active a:after,
+header nav ul li:hover a:after {
+    opacity: 1;
+}
+header img {
+    width: 20px;
+    height: 50px;
+}
+.main_bar nav ul li {padding: 0px 15px;width: 88px;}
+.main_bar nav ul li a {display:inline-block;line-height:3rem;font-weight: bold;font-size:1.0625rem;
+  text-decoration: none;
+  color:rgb(121, 119, 119);}
+.main_bar nav ul li:hover a {color: var(--baseColor);}
+.main_bar nav ul li a:after {opacity:0;content:"";position:absolute;width:100%;height: 5px;background-color:var(--baseColor);left:0;bottom:0;transition:all 0.3s ease-in-out;}
+.main_bar{
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width : 100%;
+  height: 60px;
+  border-bottom: 1px solid #b5afaf;
+}
+.main_bar ul{
+  list-style: none;
+  display : flex;
+  font-size: 15px;
+  height : 100%;
+  margin:0 auto;
+}
+#main_img {
+  position: relative;
+  float:left;
+  left:0px;
+  width: 100vw;
+  height:300px;
+  margin-left:0px;
+  top:180px;
+}
+#main_img img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center left;
+  left:0px;
+  background-size: cover;
+}
+
+section {
+  left: 85px;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  top: 500px;}
+.post_main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+}
+.post {
+  margin : 0 auto;
+  /*border: 1px solid #ccc;*/
+  margin : 25px;
+  margin-left: 0px;
+  width: 250px;
+  height : 300px;
+  position: relative;
+  float:left;
+  margin-bottom: 30px;
+}
+.post img {
+  width : 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.post_title{
+  margin : 0 auto;
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  float:left;
+  display: flex;
+}
+.post p {
+  padding-top: 0 50px;
+  color:rgb(121, 119, 119);
+  position: absolute;
+  text-align: left;
+
+}
+
+#side_menu {
+  width: 270px;
+  height: 600px;
+  float:right;
+  position: relative;
+}
+
+
+.side_menu-box nav ul li {
+  list-style: none;
+}
+.side_menu-box nav ul li a{
+ text-decoration-line: none;
+ color:rgb(121, 119, 119);
+ }
+
+.side_menu_announcement {
+  width: 100%;
+  height: 200px;
+  list-style: none;
+}
+.side_menu_announcement li{
+  margin-bottom: 10px;
+}
+
+.side_menu_chat {
+  position: relative;
+  width:100%;
+  height: 100px;
+}
+.side_menu_chat li {
+  margin-left: 10px;
+}
+.side_menu_chat li ::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px; 
+  background: #ccc;
+}
+
+.side_menu-box li:hover a, .side_menu-box li:active a{
+  color:#333;
+}
