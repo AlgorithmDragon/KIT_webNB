@@ -29,6 +29,5 @@ searchBar.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
       // 여기에 검색 기능을 추가할 수 있습니다.
       alert('검색어: ' + searchBar.value);
-      location.href = "./Login.html";
     }
   });
