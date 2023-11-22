@@ -22,7 +22,7 @@ document
         
         if (textID == ID && textPW == PW)
         {
-            location.href = "./Main.html";
+            location.href = "./main.html";
         }
         else 
         {
