@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "firebase": "^10.4.0"
-      "scripts": {
-    "build:develop": "webpack",
-    "build:master": "NODE_ENV=production webpack",
-  }
-}
