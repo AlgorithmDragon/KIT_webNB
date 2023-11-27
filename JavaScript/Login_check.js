@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 location.href = "./Login.html";
             }
             else {
-                location.href = "/Login.html";
+                location.href = "../Login.html";
             }
         }
     });
